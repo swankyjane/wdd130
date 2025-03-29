@@ -1,0 +1,111 @@
+<?xml version='1.0'?>
+<prop.map version='4'>
+<prop.list>
+<prop.pair>
+<key>BuiltInKeys</key>
+<array>
+<array.type><string/></array.type>
+<string>$$$/Premiere/FrontEnd/Essentials=Essentials</string>
+<string>$$$/Premiere/FrontEnd/Vertical=Vertical</string>
+<string>$$$/Premiere/FrontEnd/Learning=Learning</string>
+<string>$$$/Premiere/FrontEnd/AllPanels=All Panels</string>
+<string>$$$/Premiere/FrontEnd/Assembly=Assembly</string>
+<string>$$$/Premiere/FrontEnd/Editing=Editing</string>
+<string>$$$/Premiere/FrontEnd/Color=Color</string>
+<string>$$$/Premiere/FrontEnd/Effects=Effects</string>
+<string>$$$/Premiere/FrontEnd/Audio=Audio</string>
+<string>$$$/Premiere/FrontEnd/Metalogging=Metalogging</string>
+<string>$$$/Premiere/FrontEnd/CaptionsGraphicsSpace=Captions and Graphics#{comment}DVAGE-6442</string>
+<string>$$$/Premiere/FrontEnd/Review=Review</string>
+<string>$$$/Premiere/FrontEnd/Libraries=Libraries</string>
+<string>$$$/Premiere/FrontEnd/Production=Production</string>
+<string>$$$/Premiere/FrontEnd/TextBasedEditing=Text-Based Editing</string>
+</array>
+</prop.pair>
+<prop.pair>
+<key>BuiltIns</key>
+<array>
+<array.type><ustring/></array.type>
+</array>
+</prop.pair>
+<prop.pair>
+<key>FilePaths</key>
+<array>
+<array.type><ustring/></array.type>
+<ustring>C:\Users\USER\Documents\Adobe\Premiere Pro\24.0\Profile-USER\Layouts\UserWorkspace_1.xml</ustring>
+<ustring>C:\Users\USER\Documents\Adobe\Premiere Pro\24.0\Profile-USER\Layouts\UserWorkspace_3.xml</ustring>
+<ustring>C:\Users\USER\Documents\Adobe\Premiere Pro\24.0\Profile-USER\Layouts\UserWorkspace_2.xml</ustring>
+<ustring>C:\Users\USER\Documents\Adobe\Premiere Pro\24.0\Profile-USER\Layouts\UserWorkspace.xml</ustring>
+</array>
+</prop.pair>
+<prop.pair>
+<key>MainWndPos</key>
+<prop.list>
+<prop.pair>
+<key>MaxPos</key>
+<array>
+<array.type><int type='signed' size='32'/></array.type>
+<int type='signed' size='32'>-1</int>
+<int type='signed' size='32'>-1</int>
+</array>
+</prop.pair>
+<prop.pair>
+<key>MinPos</key>
+<array>
+<array.type><int type='signed' size='32'/></array.type>
+<int type='signed' size='32'>-1</int>
+<int type='signed' size='32'>-1</int>
+</array>
+</prop.pair>
+<prop.pair>
+<key>NormalPos</key>
+<array>
+<array.type><int type='signed' size='32'/></array.type>
+<int type='signed' size='32'>1653</int>
+<int type='signed' size='32'>166</int>
+<int type='signed' size='32'>2999</int>
+<int type='signed' size='32'>874</int>
+</array>
+</prop.pair>
+<prop.pair>
+<key>ShowCmd</key>
+<int type='signed' size='32'>3</int>
+</prop.pair>
+</prop.list>
+</prop.pair>
+<prop.pair>
+<key>ModifiedTimes</key>
+<array>
+<array.type><string/></array.type>
+<string>20241218T225816.626922</string>
+<string>20241219T051919.974059</string>
+<string>20241219T052735.379367</string>
+<string>20240829T190054.805919</string>
+</array>
+</prop.pair>
+<prop.pair>
+<key>UserNames</key>
+<array>
+<array.type><ustring/></array.type>
+<ustring>$$$/Premiere/FrontEnd/Assembly=Assembly</ustring>
+<ustring>$$$/Premiere/FrontEnd/Color=Color</ustring>
+<ustring>$$$/Premiere/FrontEnd/Effects=Effects</ustring>
+<ustring>$$$/Premiere/FrontEnd/Learning=Learning</ustring>
+</array>
+</prop.pair>
+<prop.pair>
+<key>WorkspaceConfigVersion</key>
+<string>1.1</string>
+</prop.pair>
+<prop.pair>
+<key>WorkspaceTypes</key>
+<array>
+<array.type><int type='signed' size='32'/></array.type>
+<int type='signed' size='32'>1</int>
+<int type='signed' size='32'>1</int>
+<int type='signed' size='32'>1</int>
+<int type='signed' size='32'>1</int>
+</array>
+</prop.pair>
+</prop.list>
+</prop.map>
