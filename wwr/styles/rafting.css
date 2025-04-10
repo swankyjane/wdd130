@@ -12,10 +12,8 @@
     --headline-color-on-color: var(--secondary-color);
     --paragraph-background-color: var(--primary-color);
 }
-
-*,
-*::before,
-*::after {
+                                 
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
@@ -24,10 +22,8 @@ body {
     background-color: #f4f4f4;
 }
 
-header,
-main,
-footer {
-    max-width: 1200px;
+header, main, footer {
+    max-width: 1200px;  
     margin: 0 auto;
 }
 
@@ -38,8 +34,7 @@ header {
     padding: 12px;
     display: grid;
     grid-template-columns: 200px auto;
-    align-items: center;
-    /* or you do the align-self on the nav rule */
+    align-items: center; 
 }
 
 .header-container {
@@ -71,12 +66,12 @@ nav a {
 /* Hover effect for nav links */
 nav a:hover {
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7);
-    color: #ffa9e7;
+    color : #ffa9e7;
 }
 
 nav a.active {
     border-bottom: 2px solid #ffa9e7;
-}
+} 
 
 .active {
     border-bottom: 2px solid #ffa9e7;
@@ -129,26 +124,16 @@ h1 {
 .hero article {
     display: block;
     position: absolute;
-    top: 80%;
-    /* Center vertically */
-    left: 50%;
-    /* Center horizontally */
-    transform: translate(-50%, -50%);
-    /* Adjust position to truly center */
-    background-color: rgba(0, 0, 0, 0.7);
-    /* Semi-transparent black background */
-    padding: 20px;
-    /* Increased padding for better spacing */
-    width: 80%;
-    /* Maintain width */
-    color: antiquewhite;
-    /* Text color */
-    border-radius: 8px;
-    /* Rounded corners for a softer look */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    /* Subtle shadow for depth */
-    text-align: center;
-    /* Center text inside the article */
+    top: 80%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to truly center */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 20px; /* Increased padding for better spacing */
+    width: 80%; /* Maintain width */
+    color: antiquewhite; /* Text color */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    text-align: center; /* Center text inside the article */
 }
 
 .hero article img {
@@ -166,6 +151,305 @@ section {
 section h2 {
     color: var(--secondary-color);
     margin-bottom: 10px;
+}
+
+/* Adventures section */
+/* Adventures section */
+.gallery {
+    display: flex;                   /* Use Flexbox for layout */
+    justify-content: space-around;  /* Even spacing between items */
+    flex-wrap: wrap;                /* Allow wrapping to next line if needed */
+}
+
+.gallery figure {
+    margin: 10px;                   /* Space around each figure */
+    text-align: center;             /* Center captions under images */
+}
+
+.gallery img {
+    width: 200px;                   /* Set a fixed width for all images */
+    height: auto;                   /* Maintain aspect ratio */
+}
+
+.adventures figure,
+.archives img {
+    /* background: linear-gradient(135deg, #c8eaf1, #6ce2e6); */
+    padding: 0.5em;
+    margin: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: auto;
+}
+
+.adventures figure {
+    background: linear-gradient(135deg, #ffffff, #79d0f6);
+    color: #0d0579;
+    font-size: 14px;
+    padding: 0.5em;
+    margin: 0;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Archives section */
+.archives {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.archives h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.adventures img {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--primary-color);
+    color: rgb(6, 55, 161);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer p {
+    margin: 0;
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sociallinks a {
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.sociallinks img {
+    width: 18px;
+    height: 18px;
+}
+
+/* Contact section styles */
+.contact-section {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.contact-form,
+.contact-info {
+    flex: 1;
+    max-width: 45%;
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    height: 771px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Map iframe styles */
+.contact-info iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 0;
+}
+
+.form-group {
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #064e5e;
+}
+
+/* Employee section styles */
+.employee {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.employee-details {
+    flex: 1;
+}
+
+.employee-info h2 {
+    margin-top: 0;
+}
+
+.employee-description p {
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+/* Styling the office1 image */
+figure.our-office {
+    margin-top: 20px;
+}
+
+figure.our-office img {
+    max-width: 110%;
+    width: 450px;
+    height: 350px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: -10px;
+}
+
+/* Contact form button hover effect */
+.contact-form button:hover,
+.cta-button:hover {
+    background-color: var(--secondary-color); /* Change button background color on hover */
+    color: rgb(45, 10, 156);                            /* Change button text color to white */
+    cursor: pointer;                         /* Change cursor to pointer */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow effect */
+}
+
+/* Trip page section styles */
+.cta {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: rgb(19, 6, 138);
+    padding: 40px 20px;
+    margin-bottom: 20px;
+}
+
+.cta-banner {
+    width: 100px; /* Set width of the circular banner */
+    height: 100px; /* Set height equal to width for a perfect circle */
+    background-color: #4CAF50; /* Background color */
+    border-radius: 50%; /* Makes the div circular */
+    display: flex; /* Use flexbox for centering content */
+    flex-direction: column; /* Arrange items in a column */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    margin: 20px auto; /* Center the banner on the page */
+} 
+
+.cta-button {
+    background-color: #064e5e; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Rounded corners for button */
+    text-decoration: none; /* Remove underline from link */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.cta-button:hover {
+    background-color: #d32f2f; /* Darker shade on hover */
+}
+
+.trip-descriptions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.trip {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.trip img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.trip h2 {
+    color: var(--secondary-color);
+    margin: 15px 0 10px;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.trip-table th,
+.trip-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.trip-table th {
+    background-color: var(--primary-color);
+    color: rgb(21, 6, 132);
+}
+
+.trip-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.trip-table tr:hover {
+    background-color: #f1f1f1;
+}
+.trip img{
+    width: auto;
+    height: 120px;
 }
 
 /* Home page Styling*
@@ -201,14 +485,9 @@ section h2 {
 }
 
 /* Grid layout */
-.adventure-grid {
+.grid-layout {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    padding: 20px;
-}
-
-.figure {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;
 }
@@ -222,12 +501,19 @@ section h2 {
 }
 
 .grid-item img {
-    width: 200px;
-    height: auto;
+    width: 450px;
+    height: 300px;
     border-radius: 8px 8px 0 0;
 
 }
 
 .grid-item p {
     margin: 15px 0 0;
+}
+
+/* picture frame for photos */
+.employee img {
+    padding: 20px;
+    border: 10px solid #14cee3; /* Default frame color */
+    box-shadow: 0 8px 12px rgba(14, 13, 13, 0.2);
 }
